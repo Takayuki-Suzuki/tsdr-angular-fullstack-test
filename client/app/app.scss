@@ -1,0 +1,66 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import 'font-awesome/scss/font-awesome';
+
+/**
+ * App-wide Styles
+ */
+/* Structure */
+html, body{
+  width: 100% !important;
+  height: 100% !important;
+}
+body{
+  position: relative;
+}
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+.navbar{
+  margin-bottom: 0;
+}
+.general-breath-s{
+  margin-top: 20px;
+}
+.general-breath{
+  margin-top: 40px;
+}
+.general-breath-l{
+  margin-top: 60px;
+}
+.general-fwn{
+  font-weight: normal;
+}
+.general-vat{
+  vertical-align: top;
+}
+.general-w200{
+  width: 200px;
+}
+.general-fr{
+  float: right;
+}
+.general-wf{
+  width: 100%;
+}
+.well-transparent{
+  min-width: 300px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+}
+
+// Component styles are injected through grunt
+// injector
+@import 'account/login/login.scss';
+@import 'admin/admin.scss';
+@import 'main/main.scss';
+@import 'modal/modal.scss';
+// endinjector

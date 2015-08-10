@@ -1,0 +1,21 @@
+// Colors
+// --------------------------------------------------
+
+$btnText:                           #fff;
+$btnTextAlt:                        #000;
+
+body.LoginCtrl:after,
+body.SignupCtrl:after{
+  content: "";
+  background-image: url(http://uranokao.com/wp-content/uploads/2015/01/new-writer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+}
