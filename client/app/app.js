@@ -47,11 +47,15 @@ angular.module('pplGureWrApp', [
     $rootScope.$on('$stateChangeStart', function (event, next) {
       Auth.isLoggedInAsync(function(loggedIn) {
         if (next.authenticate && !loggedIn) {
-          event.preventDefault();
+          if($location.$$path !== '/') event.preventDefault();
           $location.path('/login');
+        } else if(next.noNeedForAuthenticatedUser && loggedIn){
+          event.preventDefault();
+          $location.path('/');
         }
       });
     });
+
     $rootScope.$on('$stateChangeSuccess',function(event, toState){
         $rootScope.controller = toState.controller;
     });

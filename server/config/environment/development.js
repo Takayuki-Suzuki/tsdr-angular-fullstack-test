@@ -8,5 +8,5 @@ module.exports = {
     uri: 'mongodb://localhost/pplgurewr-dev'
   },
 
-  seedDB: true
+  // seedDB: true
 };

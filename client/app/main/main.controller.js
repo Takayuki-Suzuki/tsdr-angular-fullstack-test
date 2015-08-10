@@ -3,6 +3,7 @@
 angular.module('pplGureWrApp')
   .controller('MainCtrl', function ($scope, $http, socket) {
     $scope.awesomeThings = [];
+    $scope.listings = [{ id: '1', title: '51. WM_バッグ'}, { id: '2', title: 'テストーー'}];
 
     $http.get('/api/things').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;

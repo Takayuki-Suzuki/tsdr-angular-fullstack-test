@@ -1,0 +1,161 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div>
+	<div class="container">
+		<h1>案件詳細</h1>
+		<section>
+			<div class="panel panel-primary">
+				<!-- Default panel contents -->
+				<div class="panel-heading">Writer Site 案件詳細</div>
+				<div class="panel-body">
+					<p>Writer Site の案件詳細です。</p>
+				</div>
+
+				<!-- Table -->
+				<table class="table">
+					<tbody>
+						<tr>
+							<th>この案件の説明</th>
+							<td>コーチの実践トライアル</td>
+						</tr>
+						<tr>
+							<th>キャンペーン</th>
+							<td>[ブランド]バッグ掛合せ</td>
+						</tr>
+						<tr>
+							<th>広告グループ</th>
+							<td>WM_バッグ</td>
+						</tr>
+						<tr>
+							<th>対象キーワード</th>
+							<td>
+								<ul>
+									<li><%= link_to 'コーチ 女性 かばん', '#'%></li>
+									<li><%= link_to 'コーチ 女性 かばん', '#'%></li>
+									<li><%= link_to 'コーチ 女性 かばん', '#'%></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>現在の広告文（参考）</th>
+							<td></td>
+						</tr>
+						<tr>
+							<th>対象ページ</th>
+							<td><%= link_to 'http://wwww.test.com', '#' %></td>
+						</tr>
+						<tr>
+							<th>現在の応募数</th>
+							<td>2件</td>
+						</tr>
+						<tr>
+							<th>特筆事項</th>
+							<td>バッグの広告文。夏⇒秋の移り変わりに合わせて季節訴求できると良いです。</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<section class="general-breath-l">
+			<h2>応募中のキャッチコピー案</h2>
+			<p>青背景は採用済み、赤背景はあなたの投稿です。</p>
+			<div class="panel panel-default">
+				<!-- Table -->
+				<table class="table">
+					<thead>
+						<tr>
+							<th></th>
+							<th>応募ID</th>
+							<th>応募案</th>
+							<th>意図･狙い <small>	自分の投稿以外は非公開です</small></th>
+							<th>状況</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>あなたの投稿</td>
+							<td>66</td>
+							<td>
+								<div class="detail-ad">
+									<h3>COACH公式／初秋の新作バッグ</h3>
+									<p>
+										上質で都会的なデザインのバッグで<br />ひと足先にシックな秋の装いを
+									</p>
+								</div>
+							</td>
+							<td>季節の変わり目を意識しました。</td>
+							<td>選考中</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="general-breath-l">
+			<h2>応募</h2>
+			<p>「現在の広告」や「応募中の案」と同じ文章は無効となります。</p>
+			<form action="">
+				<div class="panel panel-default">
+					<table class="table">
+						<tbody>
+							<tr>
+								<th nowrap>キャッチコピー</th>
+								<td>
+									<div class="input-group input-group-lg">
+										<input type="text" name="FIXME" placeholder="キャッチコピー" class="form-control">
+									</div>
+								</td>
+								<td nowrap>残り15文字</td>
+								<td>
+									<ul>
+										<li>最低文字数は全角7文字（半角14文字）以上</li>
+										<li>全角15文字（半角30文字）以内</li>
+										<li>半角カナは禁止です。</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>補足1</th>
+								<td>
+									<div class="input-group input-group-lg">
+										<input type="text" name="FIXME" placeholder="補足1" class="form-control">
+									</div>
+								</td>
+								<td nowrap>残り19文字</td>
+								<td rowspan="2">
+									<ul>
+										<li>最低文字数は全角10文字（半角20文字）以上</li>
+										<li>全角19文字（半角38文字）以内</li>
+										<li>半角カナは禁止です。</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>補足2</th>
+								<td>
+									<div class="input-group input-group-lg">
+										<input type="text" name="FIXME" placeholder="補足2" class="form-control">
+									</div>
+								</td>
+								<td nowrap>残り19文字</td>
+							</tr>
+							<tr>
+								<th>この案の狙い</th>
+								<td>
+									<div class="input-group input-group-lg">
+										<textarea name="FIXME" placeholder="この案の狙い" rows="3" class="form-control"></textarea>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									このキャッチコピーの狙い･意図をご説明ください。意図･狙いはクライアントしか確認できないので、差別化のチャンス！
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<input type="submit" class="btn btn-primary btn-lg" value="応募する">
+			</form>
+		</section>
+	</div>
+</div>

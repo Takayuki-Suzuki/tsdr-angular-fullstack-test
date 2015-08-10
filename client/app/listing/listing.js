@@ -3,10 +3,10 @@
 angular.module('pplGureWrApp')
   .config(function ($stateProvider) {
     $stateProvider
-      .state('main', {
-        url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl',
+      .state('listing', {
+        url: '/listing/:id',
+        templateUrl: 'app/listing/listing.html',
+        controller: 'ListingCtrl',
         authenticate: true
       });
   });

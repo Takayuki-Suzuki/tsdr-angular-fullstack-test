@@ -6,12 +6,14 @@ angular.module('pplGureWrApp')
       .state('login', {
         url: '/login',
         templateUrl: 'app/account/login/login.html',
-        controller: 'LoginCtrl'
+        controller: 'LoginCtrl',
+        noNeedForAuthenticatedUser: true
       })
       .state('signup', {
         url: '/signup',
         templateUrl: 'app/account/signup/signup.html',
-        controller: 'SignupCtrl'
+        controller: 'SignupCtrl',
+        noNeedForAuthenticatedUser: true
       })
       .state('settings', {
         url: '/settings',

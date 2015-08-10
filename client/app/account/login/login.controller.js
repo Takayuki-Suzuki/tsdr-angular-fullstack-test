@@ -5,6 +5,8 @@ angular.module('pplGureWrApp')
     $scope.user = {};
     $scope.errors = {};
 
+    // if(Auth.isLoggedIn()){ $location.path('/');}
+
     $scope.login = function(form) {
       $scope.submitted = true;
 
